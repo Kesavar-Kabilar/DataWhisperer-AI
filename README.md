@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a chatbot using AWS Lex that calculates the shortest distance between two cities in a directed graph. All edges in the graph have a weight of 1. The project utilizes various AWS services, including:
+This project implements a chatbot using AWS Lex that calculates the shortest distance between two cities in a directed graph. The project utilizes various AWS services, including:
 
 * **AWS Lambda:**  Two Lambda functions are used - one for creating the graph in DynamoDB and another for interacting with Lex to retrieve distances.
 * **AWS API Gateway:**  Provides a REST API endpoint to interact with the graph creation Lambda function.
