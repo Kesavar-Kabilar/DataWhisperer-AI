@@ -1,14 +1,22 @@
-# AWS Lex Chatbot for Finding Shortest Distance in a Graph
+# DataWhisperer-AI
 
 ## Overview
 
-This project implements a chatbot using AWS Lex that calculates the shortest distance between two cities in a directed graph. The project utilizes various AWS services, including:
+I implemented a chatbot using AWS Lex that interacts with DynamoDB to retrieve information about cities and calculates the shortest distance between two cities in a directed graph. 
+
+The project utilizes the following AWS services:
 
 * **AWS Lambda:**  Two Lambda functions are used - one for creating the graph in DynamoDB and another for interacting with Lex to retrieve distances.
 * **AWS API Gateway:**  Provides a REST API endpoint to interact with the graph creation Lambda function.
 * **AWS DynamoDB:**  Stores the graph data, including cities (nodes) and distances (edges).
 * **AWS Lex:**  The chatbot service that interacts with users, gathers city information, and returns the shortest distance.
 * **AWS Cognito:**  Used for authentication and authorization to access the Lex chatbot.
+
+Given two cities and based on the user's query, the DataWhisperer-AI chatbot can calculate: 
+* the shortest distance between two cities in a directed graph calculate
+* average time it would take to travel based on transportation
+* the time difference
+* and more features can be included by modifying the dataset and Lex-chatbot
 
 
 ## AWS DynamoDB
@@ -86,3 +94,4 @@ This Lambda function is responsible for creating the graph in DynamoDB.
 
 <img src="./imgs/Test1.png" width="300">
 <img src="./imgs/Test2.png" width="300">
+
